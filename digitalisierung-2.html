@@ -1,0 +1,219 @@
+<html>
+<head>
+  <title>Digitalisierung (2)</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Bruno Wenk">
+  <meta name="date" content="2018-04-11"
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <style>
+    body {font-family: 'Josefin Slab', 'Georgia', serif;}
+    h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans Condensed', 'Trebuchet MS', sans-serif;}
+    .hint {font-family: 'Open Sans Condensed', 'Trebuchet MS', sans-serif;}
+    .title {color: #ecb535; font-weight: bold;}
+    .w3-bar,h1,button {font-family: 'Open Sans Condensed', 'Trebuchet MS', sans-serif;}
+    .w3-theme-l5 {color:#000 !important; background-color:#fefbf5 !important}
+    .w3-theme-l4 {color:#000 !important; background-color:#fcf2dc !important}
+    .w3-theme-l3 {color:#000 !important; background-color:#f9e6ba !important}
+    .w3-theme-l2 {color:#000 !important; background-color:#f5d997 !important}
+    .w3-theme-l1 {color:#000 !important; background-color:#f2cd75 !important}
+    .w3-theme-d1 {color:#000 !important; background-color:#ecb535 !important}
+    .w3-theme-d2 {color:#000 !important; background-color:#e9ab18 !important}
+    .w3-theme-d3 {color:#fff !important; background-color:#ce9613 !important}
+    .w3-theme-d4 {color:#fff !important; background-color:#b08010 !important}
+    .w3-theme-d5 {color:#fff !important; background-color:#936b0e !important}
+    .w3-theme-light {color:#000 !important; background-color:#fefbf5 !important}
+    .w3-theme-dark {color:#fff !important; background-color:#936b0e !important}
+    .w3-theme-action {color:#fff !important; background-color:#936b0e !important}
+    .w3-theme {color:#000 !important; background-color:#efc050 !important}
+    .w3-text-theme {color:#efc050 !important}
+    .w3-theme-border {border-color:#efc050 !important}
+    .w3-hover-theme:hover {color:#000 !important; background-color:#efc050 !important}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-l1 w3-card w3-left-align w3-large">
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-theme-l1 w3-center" style="padding:64px 16px">
+  <h1 class="w3-margin w3-jumbo">Digitalisierung von Bildern</h1>
+  <h2>Grundlagen</h2>
+</header>
+
+<!-- row -->
+<div class="w3-row-padding w3-padding-32 w3-container">
+  <div class="w3-content">
+      <div>
+        <h1 class="title">Einleitung</h1>
+        <p class="w3-text-darkgrey w3-xlarge">Auf dem Webportal einer „Bildagentur“ (z.B. <a href="https://www.istockphoto.com/de" target="_blank">iStock</a>) finden wir <em>Fotos</em> und <em>Grafiken</em>. Was ist der Unterschied?</p>
+        <p class="w3-text-darkgrey w3-xlarge">Das Abbildungsmodell bei Fotos ist <em>rasterorientiert</em>. Ein digitales Foto (Duden: das Foto; schweizerisch auch: die Foto) besteht aus einem Bildpunktraster. Einen Bildpunkt bezeichnen wir auch als <em>pixel</em> (picture element), ein digitales Foto deshalb auch als Pixelbild.</p>
+        <p class="w3-text-darkgrey w3-xlarge">Das Abbildungsmodell bei Grafiken ist <em>vektororientiert</em>. Eine digitale Vektorgrafik beschreibt die einzelnen Elemente der Grafik und deren gegenseitige Anordnung in Form von mathematischen Operationen. Bei der Darstellung einer Vektorgrafik auf dem Bildschirm werden diese mathematischen Operationen ausgeführt und ein Pixelbild für die Bildschirmdarstellung generiert. Weil diese Operationen erst bei der Darstellung ausgeführt werden, sind Vektorgrafiken beliebig skalierbar (vergrössern / verkleinern), die Vektorgrafik wird in jedem Fall mit höchstmöglicher Qualität dargestellt.</p>
+      </div>
+      <div>
+        <div class="w3-half w3-padding">
+          <p class="W3-center w3-text-darkgrey w3-xlarge">Pixelbild</p>
+          <p class="W3-center"><img src="images/illustration.png" width="90%"></p>
+          <p class="hint w3-small w3-center"><a href="images/illustration.png" target="_blank">Pixelbild vergrössern</a></p>
+        </div>
+        <div class="w3-half w3-padding">
+          <p class="W3-center w3-text-darkgrey w3-xlarge">Vektorgrafik</p>
+          <p class="W3-center"><img src="images/illustration.svg" width="90%"></p>
+          <p class="hint w3-small w3-center"><a href="images/illustration.svg" target="_blank">Vektorgrafik vergrössern</a></p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-large w3-container">
+    <div class="w3-content">
+        <div class="w3-third w3-padding">
+          <p class="w3-text-darkgrey w3-xlarge">Für ein Pixelbild mit einer zu einer Vektorgrafik vergleichbaren Qualität sind Milliarden von Pixeln nötig. Das nebenstehende Shanghai Bund Panorama umfasst 24.9 Milliarden Pixel.</p>
+        </div>
+        <div class="w3-twothird w3-padding">
+          <p class="W3-center"><img src="images/Shanghai.png" width="90%"></p>
+          <p class="hint w3-small w3-center"><a href="http://www.bigpixel.cn/t/57ecedae64b1bf2050ab00c1" target="_blank">Panorama vergrössern</a></p>
+        </div>
+    </div>
+</div>
+    
+<!-- row -->
+<div class="w3-row-padding w3-padding-large w3-container">
+  <div class="w3-content">
+      <h1 class="title">Digitale Bilder (Pixelbilder)</h1>
+      <h3 class="title">Modell der Erfassung, Speicherung und Wiedergabe</h3>
+      <p class="w3-center w3-text-darkgrey w3-xlarge"><img src="images/Modell_DigitalisierungBilder.svg" width="90%"></p> 
+      <p class="w3-text-darkgrey w3-xlarge">Zum Erfassen von digitalen Fotos dienen <a href="scanner.html" target="_blank"><em>Scanner</em></a> und <a href="digitalkamera.html" target="_blank"><em>Digitalkameras</em></a>.</p>
+      <p class="w3-center w3-text-darkgrey w3-xlarge"><img src="images/Rasterung.png" width="75%"></p>
+      <p class="w3-text-darkgrey w3-xlarge">Bei der Erfassung entsteht eine tabellenartige Datenstruktur mit Zeilen und Spalten. Jeder Zahlenwert in der Tabelle stellt eine bestimmte Eigenschaft des betreffenden Bildpunktes (pixel) dar (z.B. Grauwert, Farbwert). Je nach Bilddateiformat (z.B. TIFF, JPEG2000, PNG) sind die Zahlenwerte aber unterschiedlich angeordnet und mit zusätzlichen Zahlenwerten (Metadaten, z.B. <a href="https://www.jeita.or.jp/japanese/standard/book/CP-3451D_E/#target/page_no=1" target="_blank">Exif</a>, <a href="http://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata" target="_blank">IPTC</a>, <a href="https://www.adobe.com/products/xmp.html" target="_blank">XMP</a>) ergänzt. Daraus ergeben sich auch unterschiedliche Dateigrössen für den gleichen Bildinhalt.</p>
+  </div>
+</div>
+    
+<!-- row -->
+<div class="w3-row-padding w3-padding-32 w3-container">
+  <div class="w3-content w3-card">    
+    <button onclick="myAccordion('uebung1')" class="w3-button w3-block w3-theme-l2 w3-text-dark-grey w3-left-align"><b>Übung: Vergleich digitaler Bilder</b></button>
+    <div id="uebung1" class="w3-hide w3-container">
+      <div class="w3-theme-l4 w3-margin w3-card w3-padding">
+        <p class="w3-text-grey w3-xlarge">Speichern Sie die beiden folgenden Bildern auf Ihrem Rechner (Mausklick rechte Taste / &lt;Ctrl&gt; Mausklick).</p>
+        <ul class="w3-text-grey w3-xlarge">
+            <li>Vergleichen Sie die Dateigrössen.</li>
+            <li>Nutzen Sie das Online-Tool <a href="https://hexed.it" target="_blank">HexEd.it</a>, um die in den Dateien gespeicherten Zahlenwerte zu vergleichen.</li>
+            <li>Vergrössern Sie die Bilder, bis Sie das Schild über der Eingangstüre lesen können.</li>
+        </ul>
+        <p class="w3-text-grey w3-xlarge">Wie beurteilen Sie die Unterschiede?</p>
+        <p class="W3-center"><img src="images/WaldkirchschesHausZuRheinau.png" width="40%">&nbsp; &nbsp;<img src="images/WaldkirchschesHausZuRheinau.jpg" width="40%"></p>
+          <p class="w3-center w3-text-grey w3-small">Quelle des Originalbildes: <a href="http://commons.wikimedia.org/wiki/File:19191227b.tif?uselang=de" target="_blank">http://commons.wikimedia.org/wiki/File:19191227b.tif?uselang=de</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<!-- row -->
+<div class="w3-row-padding w3-padding-32 w3-container">
+  <div class="w3-content">
+      <h3 class="title">Kenngrössen digitaler Bilder</h3>
+      <p class="w3-text-darkgrey w3-xlarge">Die Kenngrössen digitaler Bilder</p>
+      <ul class="w3-text-darkgrey w3-xlarge">
+          <li>Auflösung</li>
+          <li>Bildpunktdichte</li>
+          <li>Grösse</li>
+          <li>Farbtiefe</li>
+      </ul>
+      <p class="w3-text-darkgrey w3-xlarge">sind im Dokument <a href="images/KenngroessenBilder.pdf" target="_blank"><em>KenngroessenBilder.pdf</em></a> erläutert.</p>
+  </div>  
+</div>
+    
+<!-- row -->
+<div class="w3-row-padding w3-padding-32 w3-container">
+  <div class="w3-content">
+      <h3 class="title">Speicherplatzbedarf</h3>
+      <p class="w3-text-darkgrey w3-xlarge">Der <em>Speicherplatzbedarf</em> für ein digitales Bild hängt im Wesentlichen von der <em>Dimension (Auflösung)</em> des Bildes und der <em>Farbtiefe</em> ab.</p>
+      <p class="w3-text-darkgrey w3-xlarge">Das digitale Grauwertbild "WaldkirchschesHausZuRheinau" mit der Dimension 2889 x 2129 pixels und der "Farbtiefe" 8 bit (1 Byte) pro Bildpunkt benötigt demnach mindestens 6’150'681 Bytes = 6.15 MByte Speicherplatz. Würde es sich dabei um ein farbiges Bild mit der Farbtiefe 8 bit pro Farbanteil handeln, wäre die Datei mindestens 18.45 MByte gross. Auf einer Daten-CD mit einer Speicherkapazität von ca. 750 Mbyte hätten maximal 40 solcher Farbbilder Platz.</p>
+      <p class="w3-text-darkgrey w3-xlarge">In der Praxis hängt die Dateigrösse auch vom verwendeten Bilddateiformat ab. In der Regel enthalten die Dateien Metadaten, die im Vergleich zur direkten Speicherung der Codes eine Vergrösserung des Speicherplatzbedarfs bewirken.</p>
+      <p class="w3-text-darkgrey w3-xlarge">Der Speicherplatzbedarf kann mit Kompressionsverfahren verringert werden. Bei <em>verlustbehafteten Kompressionsverfahren</em> ist der Speicherplatzbedarf (wesentlich) geringer als bei einer <em>verlustlosen Kompression</em>.</p>
+  </div>  
+</div>
+    
+<!-- row -->
+<div class="w3-row-padding w3-padding-32 w3-container">
+  <div class="w3-content w3-card">    
+    <button onclick="myAccordion('uebung2')" class="w3-button w3-block w3-theme-l2 w3-text-dark-grey w3-left-align"><b>Übung: Berechnung des Speicherplatzbedarfs digitaler Bilder</b></button>
+    <div id="uebung2" class="w3-hide w3-container">
+      <div class="w3-theme-l4 w3-margin w3-card w3-padding">
+        <ol style="list-style-type: lower-alpha;" class="w3-text-grey w3-xlarge">
+            <li>Berechnen Sie den Speicherplatzbedarf für ein digitales Farbbild mit der Dimension 2889 x 2129 Bildpunkte und einer Farbtiefe von 24 bit (8 bit pro Farbanteil).</li>
+            <li>Welchen Speicherplatz belegt das Digitalisat einer Schwarz/Weiss-Fotografie der Grösse 15 cm x 10 cm, wenn diese mit 600 dpi gescannt (abgetastet) wurde und die Grauwerte ("Farbtiefe" 8 bit) direkt (ohne Kompression und Metadaten) gespeichert werden?</li>
+            <li>Berechnen Sie die Bildpunktdichte und den Speicherplatzbedarf für ein digitales Grauwertbild ("Farbtiefe" 8 bit) der Grösse 15 cm x 10 cm, das eine Auflösung von 1772 x 1181 Bildpunkten aufweist.</li>
+            <li>Ein digitales Bild habe eine Auflösung von 5.88 Megapixel und ein Seitenverhältnis von 4:3. Wieviele Bildpunkte weist das digitale Bild in der Breite und in der Höhe auf?</li>
+        </ol>
+      </div>
+      <button onclick="myAccordion('muster2')" class="w3-button w3-block w3-theme-l2 w3-text-dark-grey w3-left-align"><b>"Musterlösung"</b></button>
+      <div id="muster2" class="w3-hide w3-container">
+        <div class="w3-theme-l4 w3-margin w3-card w3-padding">
+          <ol style="list-style-type: lower-alpha;" class="w3-text-grey w3-xlarge">
+            <li>18.4 MByte</li>
+            <li>600 dpi = 600 : 2.54 = 236.22 pixel pro cm<br>
+                Anzahl pixel in der Breite: 15 * 236.22 = 3544 pixel<br>
+                Anzahl pixel in der Höhe: 10 * 236.22 = 2362 pixel<br>
+                Speicherplatzbedarf: 3544 * 2362 * 1 Byte = 8.37 MB
+            </li>
+            <li>300 dpi</li>
+            <li>2800 x 2100 pixel</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-black w3-center w3-opacity" style="font-family: 'Open Sans Condensed', sans-serif;"> 
+  <p class="w3-small">Bruno Wenk, März 2018</p>
+  <p><img src="images/PublicDomain.svg"></p> 
+ <p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myToggleNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+<script>
+// accordion
+function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace("w3-theme-l2", "w3-theme-l4");
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace("w3-theme-l4", "w3-theme-l2");
+    }
+}
+</script>
+
+</body>
+</html>
+

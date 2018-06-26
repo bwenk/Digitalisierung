@@ -1,0 +1,122 @@
+<html>
+<head>
+  <title>Digitalkamera</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Bruno Wenk">
+  <meta name="date" content="2018-04-11"
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <style>
+    body {font-family: 'Josefin Slab', 'Georgia', serif;}
+    h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans Condensed', 'Trebuchet MS', sans-serif;}
+    .hint {font-family: 'Open Sans Condensed', 'Trebuchet MS', sans-serif;}
+    .title {color: #ecb535; font-weight: bold;}
+    .w3-bar,h1,button {font-family: 'Open Sans Condensed', 'Trebuchet MS', sans-serif;}
+    .w3-theme-l5 {color:#000 !important; background-color:#fefbf5 !important}
+    .w3-theme-l4 {color:#000 !important; background-color:#fcf2dc !important}
+    .w3-theme-l3 {color:#000 !important; background-color:#f9e6ba !important}
+    .w3-theme-l2 {color:#000 !important; background-color:#f5d997 !important}
+    .w3-theme-l1 {color:#000 !important; background-color:#f2cd75 !important}
+    .w3-theme-d1 {color:#000 !important; background-color:#ecb535 !important}
+    .w3-theme-d2 {color:#000 !important; background-color:#e9ab18 !important}
+    .w3-theme-d3 {color:#fff !important; background-color:#ce9613 !important}
+    .w3-theme-d4 {color:#fff !important; background-color:#b08010 !important}
+    .w3-theme-d5 {color:#fff !important; background-color:#936b0e !important}
+    .w3-theme-light {color:#000 !important; background-color:#fefbf5 !important}
+    .w3-theme-dark {color:#fff !important; background-color:#936b0e !important}
+    .w3-theme-action {color:#fff !important; background-color:#936b0e !important}
+    .w3-theme {color:#000 !important; background-color:#efc050 !important}
+    .w3-text-theme {color:#efc050 !important}
+    .w3-theme-border {border-color:#efc050 !important}
+    .w3-hover-theme:hover {color:#000 !important; background-color:#efc050 !important}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-l1 w3-card w3-left-align w3-large">
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-theme-l1 w3-center" style="padding:64px 16px">
+  <h1 class="w3-margin w3-jumbo">Digitalkamera</h1>
+  <h2>Funktionsweise</h2>
+</header>
+
+<!-- row -->
+<div class="w3-row-padding w3-padding-32 w3-container">
+  <div class="w3-content">
+      <div>
+        <h1 class="title">Funktionsprinzipien</h1>
+        <p class="w3-text-darkgrey w3-xlarge">Bei Digitalkameras fällt das Licht durch die Linse auf einen rechteckigen Sensor mit einem Raster von lichtempfindlichen Fotozellen. Diese erzeugen elektrische Signale, die kameraspezifisch verarbeitet und auf Zahlenwerte abgebildet werden. Bei einer Digitalkamera bildet der zweidimensionale Sensorchip bereits das Raster der Bildpunkte. Das digitale Bild wird in einem Schritt erfasst. Deshalb ist die Digitalisierung von Bildern mit einer Digitalkamera viel schneller als mit einem Scanner.</p>
+        <p class="w3-text-darkgrey w3-xlarge">Die Genauigkeit der Abbildung hängt vor allem von der Anzahl der einzelnen Fotosensoren auf dem Sensorchip (Auflösung) und der Verarbeitung der Sensorsignale ab.</p>
+        <p class="w3-center"><img src="images/Chipincamera.jpg"></p>
+        <p class="hint w3-small w3-center">Quelle: <a href="https://upload.wikimedia.org/wikipedia/commons/3/31/Chipincamera.jpg" target="_blank">https://upload.wikimedia.org/wikipedia/commons/3/31/Chipincamera.jpg</a></p>
+        <h3 class="title">CCD-Kamera</h3>
+        <p class="w3-text-darkgrey w3-xlarge">Bei der CCD- (Charge Coupled Device) Kamera wird das einfallende Licht über Mikrolinsen auf die einzelnen Fotozellen geführt. Das Licht verändert in den Fotozellen die elektrische Ladung. Die veränderten Ladungen müssen aus den Fotozellen über Schieberegister "ausgelesen" und mit Analog/Digital-Wandlern in Zahlenwerte umgewandelt werden. Dieser Vorgang benötigt einige Zeit, was die Anzahl Bilder pro Sekunde beschränkt.</p>
+        <p class="w3-center"><img src="images/digitalCameraChip.jpg" width="50%"></p>
+        <p class="hint w3-small w3-center">Quelle: <a href="http://av.jpn.support.panasonic.com/support/global/cs/dsc/knowhow/knowhow27.html" target="_blank">http://av.jpn.support.panasonic.com/support/global/cs/dsc/knowhow/knowhow27.html</a></p>
+        <h3 class="title">CMOS_Kamera</h3>
+        <p class="w3-text-darkgrey w3-xlarge">Bei der CMOS- (Complementary Metal Oxide Semiconductor) Kamera sind die Fotozellen auf dem Sensorchip mit Elektronik umgeben, die das durch das einfallende Licht bewirkte elektrische Signal direkt umwandelt und verstärkt. Die Signalwerte können direkt "ausgelesen" werden, was die Anzahl möglicher Bilder pro Sekunde gegenüber CCD-Kameras vergrössert.</p>
+        <p class="w3-center"><img src="images/ccd_vs_cmos.png" width="50%"></p>
+        <p class="hint w3-small w3-center">Quelle: <a href="http://meroli.web.cern.ch/lecture_cmos_vs_ccd_pixel_sensor.html">http://meroli.web.cern.ch/lecture_cmos_vs_ccd_pixel_sensor.html</a></p>
+        <h3 class="title">Wie kommt die Farbe zustande?</h3>
+        <p class="w3-text-darkgrey w3-xlarge">Zwischen den Mikrolinsen und den Fotozellen auf dem Sensorchip liegt eine Farbfilter-Matrix. Diese bewirkt, dass jede Fotozelle nur je einen Farbanteil des einfallenden Lichts erfasst. Die Farbfilter-Matrix ist in Vierer-Blöcke unterteilt, die je ein Rot-Filter (R), ein Blau-Filter (B) und zwei Grün-Filter (G) umfassen. Diese Verteilung berücksichtigt die unterschiedliche Empfindlichkeit der Sinneszellen im menschlichen Auge (nötiges Intensitätsverhältnis: Rot 30% - Grün 59% - Blau 11%).</p>
+        <p class="w3-center"><img src="images/mosaik.gif" width="50%"></p>
+        <p class="hint w3-small w3-center">Quelle: <a href="http://www.bnhof.de/~didactronic/CCD/CCDmatrix.htm">http://www.bnhof.de/~didactronic/CCD/CCDmatrix.htm</a></p>
+        <p class="w3-text-darkgrey w3-xlarge">Das nachstehende Video illustriert die softwaremässige Berechnung der Farbwerte in der Digitalkamera.</p>
+        <p class="w3-center"><a href="https://www.youtube.com/watch?v=2-stCNB8jT8" target="_blank"><img src="images/HowAPixelGetsItsColor.png" width="75%"></a></p>
+        <p class="hint w3-small w3-center">Quelle: <a href="https://www.youtube.com/watch?v=2-stCNB8jT8">https://www.youtube.com/watch?v=2-stCNB8jT8</a></p>
+      </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-black w3-center w3-opacity" style="font-family: 'Open Sans Condensed', sans-serif;"> 
+  <p class="w3-small">Bruno Wenk, März 2018</p>
+  <p><img src="images/PublicDomain.svg"></p> 
+ <p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myToggleNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+<script>
+// accordion
+function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace("w3-theme-l2", "w3-theme-l4");
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace("w3-theme-l4", "w3-theme-l2");
+    }
+}
+</script>
+
+</body>
+</html>
+

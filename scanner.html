@@ -1,0 +1,115 @@
+<html>
+<head>
+  <title>Scanner</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Bruno Wenk">
+  <meta name="date" content="2018-04-11"
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <style>
+    body {font-family: 'Josefin Slab', 'Georgia', serif;}
+    h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans Condensed', 'Trebuchet MS', sans-serif;}
+    .hint {font-family: 'Open Sans Condensed', 'Trebuchet MS', sans-serif;}
+    .title {color: #ecb535; font-weight: bold;}
+    .w3-bar,h1,button {font-family: 'Open Sans Condensed', 'Trebuchet MS', sans-serif;}
+    .w3-theme-l5 {color:#000 !important; background-color:#fefbf5 !important}
+    .w3-theme-l4 {color:#000 !important; background-color:#fcf2dc !important}
+    .w3-theme-l3 {color:#000 !important; background-color:#f9e6ba !important}
+    .w3-theme-l2 {color:#000 !important; background-color:#f5d997 !important}
+    .w3-theme-l1 {color:#000 !important; background-color:#f2cd75 !important}
+    .w3-theme-d1 {color:#000 !important; background-color:#ecb535 !important}
+    .w3-theme-d2 {color:#000 !important; background-color:#e9ab18 !important}
+    .w3-theme-d3 {color:#fff !important; background-color:#ce9613 !important}
+    .w3-theme-d4 {color:#fff !important; background-color:#b08010 !important}
+    .w3-theme-d5 {color:#fff !important; background-color:#936b0e !important}
+    .w3-theme-light {color:#000 !important; background-color:#fefbf5 !important}
+    .w3-theme-dark {color:#fff !important; background-color:#936b0e !important}
+    .w3-theme-action {color:#fff !important; background-color:#936b0e !important}
+    .w3-theme {color:#000 !important; background-color:#efc050 !important}
+    .w3-text-theme {color:#efc050 !important}
+    .w3-theme-border {border-color:#efc050 !important}
+    .w3-hover-theme:hover {color:#000 !important; background-color:#efc050 !important}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-l1 w3-card w3-left-align w3-large">
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-theme-l1 w3-center" style="padding:64px 16px">
+  <h1 class="w3-margin w3-jumbo">Scanner</h1>
+  <h2>Funktionsweise</h2>
+</header>
+
+<!-- row -->
+<div class="w3-row-padding w3-padding-32 w3-container">
+  <div class="w3-content">
+      <div>
+        <h1 class="title">Funktionsprinzipien</h1>
+        <p class="w3-text-darkgrey w3-xlarge">Beim Scannen beleuchtet eine Lichtquelle die Vorlage (Fotografie, Zeitungsseite, Buchseite, Zeichnung, Plan, etc.) zeilenweise. Das von der Vorlage an den beleuchteten Stellen reflektierte Licht wird über Spiegel zu lichtempfindlichen Sensoren (Fotosensoren) geführt (Abtastung). Die Sensoren liefern (analoge) elektrische Signale, die mit Analog/Digital-Wandlern in Zahlenwerte umgewandelt werden. Die Bildpunktdichte ergibt sich aus der Anzahl der Fotozellen pro inch auf der Abtastzeile. Das Pixelbild entsteht durch die fortlaufende Ergänzung der bereits erfassten Zeilen.</p>
+        <p class="w3-text-darkgrey w3-xlarge">Die Genauigkeit der Abbildung hängt u.a. von der Anzahl der Fotosensoren (Bildpunktdichte) und von der Genauigkeit des Transportvorschubs der Scan-Zeile ab. Die Genauigkeit der Zeile ist über die ganze Fläche der Vorlage gleich. Der Scan-Vorgang ist aber relativ langsam.</p>
+        <p class="w3-center"><img src="images/Flachbettscanner.gif"></p>
+        <p class="hint w3-small w3-center">Quelle: <a href="http://www.picolor.com/wp-content/uploads/2011/01/scannerschema.gif" target="_blank">http://www.picolor.com/wp-content/uploads/2011/01/scannerschema.gif</a></p>
+        <h3 class="title">CCD-Scanner</h3>
+        <p class="w3-text-darkgrey w3-xlarge">Im CCD- (Charge Coupled Device) Scanner beleuchtet eine Lampe [1] die Vorlage. Über das Spiegelsystem [2] gelangt das reflektierte Licht zum Prisma [3], welches das  Licht in die Farbanteile Rot/Grün/Blau (RGB) zerlegt. Für jeden Farbanteil gibt es eine eigene CCD-Zeile [4].</p>
+        <p class="w3-center"><img src="images/CCD-Scanner.jpg" width="75%"></p>
+        <p class="hint w3-small w3-center">Quelle: <a href="http://www.chip.de/ii/4830337_d3bb35f70f.jpg" target="_blank">http://www.chip.de/ii/4830337_d3bb35f70f.jpg</a></p>
+        <h3 class="title">CIS-Scanner</h3>
+        <p class="w3-text-darkgrey w3-xlarge">Im CIS- (Compact Image Sensor) Scanner dienen rote, grüne und blaue LEDs [1] als Lichtquellen. Über ein stabförmiges Linsensystem [2] gelangt das Licht zum Sensor [3]. Der Aufbau eines CIS-Scanners ist kompakt und preiswert, die einfache Stablinse bewirkt aber eine geringe Tiefenschärfe.</p>
+        <p class="w3-center"><img src="images/CIS-Scanner.jpg" width="75%"></p>
+        <p class="hint w3-small w3-center">Quelle: <a href="http://www.chip.de/ii/4830339_d3bb35f70f.jpg">http://www.chip.de/ii/4830339_d3bb35f70f.jpg</a></p>
+      </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-black w3-center w3-opacity" style="font-family: 'Open Sans Condensed', sans-serif;"> 
+  <p class="w3-small">Bruno Wenk, März 2018</p>
+  <p><img src="images/PublicDomain.svg"></p> 
+ <p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myToggleNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+<script>
+// accordion
+function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace("w3-theme-l2", "w3-theme-l4");
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace("w3-theme-l4", "w3-theme-l2");
+    }
+}
+</script>
+
+</body>
+</html>
+

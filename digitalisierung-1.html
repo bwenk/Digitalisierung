@@ -1,0 +1,147 @@
+<html>
+<head>
+  <title>Digitalisierung (1)</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Bruno Wenk">
+  <meta name="date" content="2018-04-11"
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <style>
+    body {font-family: 'Josefin Slab', 'Georgia', serif;}
+    h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans Condensed', 'Trebuchet MS', sans-serif;}
+    .hint {font-family: 'Open Sans Condensed', 'Trebuchet MS', sans-serif;}
+    .title {color: #ecb535; font-weight: bold;}
+    .w3-bar,h1,button {font-family: 'Open Sans Condensed', 'Trebuchet MS', sans-serif;}
+    .w3-theme-l5 {color:#000 !important; background-color:#fefbf5 !important}
+    .w3-theme-l4 {color:#000 !important; background-color:#fcf2dc !important}
+    .w3-theme-l3 {color:#000 !important; background-color:#f9e6ba !important}
+    .w3-theme-l2 {color:#000 !important; background-color:#f5d997 !important}
+    .w3-theme-l1 {color:#000 !important; background-color:#f2cd75 !important}
+    .w3-theme-d1 {color:#000 !important; background-color:#ecb535 !important}
+    .w3-theme-d2 {color:#000 !important; background-color:#e9ab18 !important}
+    .w3-theme-d3 {color:#fff !important; background-color:#ce9613 !important}
+    .w3-theme-d4 {color:#fff !important; background-color:#b08010 !important}
+    .w3-theme-d5 {color:#fff !important; background-color:#936b0e !important}
+    .w3-theme-light {color:#000 !important; background-color:#fefbf5 !important}
+    .w3-theme-dark {color:#fff !important; background-color:#936b0e !important}
+    .w3-theme-action {color:#fff !important; background-color:#936b0e !important}
+    .w3-theme {color:#000 !important; background-color:#efc050 !important}
+    .w3-text-theme {color:#efc050 !important}
+    .w3-theme-border {border-color:#efc050 !important}
+    .w3-hover-theme:hover {color:#000 !important; background-color:#efc050 !important}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-l1 w3-card w3-left-align w3-large">
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-theme-l1 w3-center" style="padding:64px 16px">
+  <h1 class="w3-margin w3-jumbo">Digitalisierung - Abbildung auf Zahlenwerte</h1>
+  <h2>Grundlagen</h2>
+</header>
+
+<!-- row -->
+<div class="w3-row-padding w3-padding-32 w3-container">
+  <div class="w3-content">
+      <div>
+        <h1 class="title">Digitalisierung</h1>
+        <p class="w3-text-darkgrey w3-xlarge">Digitale Computer können nur Zahlenwerte speichern und verarbeiten. Digitalisierung bedeutet deshalb "Abbildung auf Zahlenwerte".</p>
+      </div>
+  </div>
+</div>
+
+<!-- row -->
+<div class="w3-row-padding w3-padding-large w3-container">
+  <div class="w3-content">
+    <div>
+      <h3 class="title">Beispiel: <a href="https://www.w3.org/International/questions/qa-what-is-encoding.de" target="_blank">Digitalisierung von Text</a></h3>
+      <p class="w3-text-darkgrey w3-xlarge">Bei der Digitalisierung von Text werden die einzelnen Zeichen (Buchstaben, Ziffern, Interpunktionszeichen, usw.) je auf einen Zahlenwert abgebildet. Eine derartige Abbildung bezeichnen wir als <em>Code</em>.</p>
+      <h4 class="title">Der American Standard Code of Information Interchange (ASCII)</h4>
+      <p class="w3-text-darkgrey w3-xlarge">In den Anfängen der Nutzung von digitalen Rechnern erfolgte die Abbildung von Texten auf Zahlenwerte mit dem <a href="http://www.torsten-horn.de/techdocs/ascii.htm" target="_blank"><em>American Standard Code of Information Interchange</em></a> (ASCII).</p> 
+      <p class="w3-text-darkgrey w3-xlarge">Der ASCII umfasst 128 Zahlenwerte (0 .. 127). Damit sind nur die Zeichen von englischsprachigen Texten darstellbar; spezielle Zeichen anderer Sprachen (z.B. ä, é, &#946;, &Aring; &iquest;) können nicht auf ASCII-Codes abgebildet werden.</p>
+      <p class="w3-text-darkgrey w3-xlarge">Firmen, die ihre Computer in nicht englischsprachigen Ländern verkaufen wollten, haben deshalb den ASCII-Code auf 256 Zahlenwerte erweitert (0 .. 255). Diese Erweiterungen sind aber teilweise unterschiedlich:</p>
+    </div>
+    <div class="w3-content">
+      <div class="w3-half w3-padding">
+        <p class="w3-text-darkgrey w3-xlarge w3-center">Microsoft Windows 1252</p>
+        <p class="w3-text-darkgrey w3-xlarge w3-center">Code 128 &#8596; &#8364;</p>
+      </div>
+      <div class="w3-half w3-padding">
+        <p class="w3-text-darkgrey w3-xlarge w3-center">Apple Mac OS Roman</p>
+        <p class="w3-text-darkgrey w3-xlarge w3-center">Code 128 &#8596; Ä</p>
+      </div>
+    </div>
+    <div class="w3-content">
+      <h4 class="title">Der Unicode</h4>
+      <p class="w3-text-darkgrey w3-xlarge">Der <a href="https://unicode-table.com/de/alphabets/" target="_blank"><em>Unicode</em></a> dient dazu, die Abbildung der Zeichen aller Schriftsprachen auf Zahlenwerte zu vereinheitlichen. Der Unicode umfasst über 900'000 Zahlenwerte, wobei die ersten 128 Werte (0 .. 127) den Werten des ASCII-Codes entsprechen.</p> 
+      <p class="w3-text-darkgrey w3-xlarge">Damit der Speicherplatzbedarf für Texte wegen der grossen Zahlenwerte des Unicodes nicht stark zunimmt, wird in der Praxis eine platzsparende Codierung der Unicode-Werte verwendet. Üblicherweise ist dies die 8-Bit Universal Character Set Transformation (<a href="http://www.utf-8.com" target="_blank"><em>UTF-8</em></a>).</p>
+    </div>
+  </div>
+</div>
+    
+<!-- row -->
+<div class="w3-row-padding w3-padding-32 w3-container">
+  <div class="w3-content w3-card">    
+    <button onclick="myAccordion('uebung1')" class="w3-button w3-block w3-theme-l2 w3-text-dark-grey w3-left-align"><b>Übung Zeichencodierung</b></button>
+    <div id="uebung1" class="w3-hide w3-container">
+      <div class="w3-theme-l4 w3-margin w3-card w3-padding">
+        <p class="w3-text-grey w3-xlarge">Nutzen Sie das Online-Tool <a href="https://hexed.it" target="_blank">HexEd.it</a>, um die UTF-8-Codes eines digitalen Textes zu analysieren. Markieren Sie die nachstehende Zeichenfolge, kopieren Sie sie in die Zwischenablage (copy) und fügen Sie sie dann in HexEd.it ein (paste -> Daten an der Cursor-Position einfügen).</p>
+        <p class="w3-text-grey w3-xlarge">[ a, 3, ä, é, &#946;, &Aring; &iquest; ]</p>
+        <p class="W3-center"><img src="images/hexedit.png" width="90%"></p>
+        <p class="hint w3-small w3-center"><a href="images/hexedit.png" target="_blank">Abbildung vergrössern</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-black w3-center w3-opacity" style="font-family: 'Open Sans Condensed', sans-serif;"> 
+  <p class="w3-small">Bruno Wenk, März 2018</p>
+  <p><img src="images/PublicDomain.svg"></p> 
+ <p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myToggleNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+<script>
+// accordion
+function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace("w3-theme-l2", "w3-theme-l4");
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace("w3-theme-l4", "w3-theme-l2");
+    }
+}
+</script>
+
+</body>
+</html>
+
